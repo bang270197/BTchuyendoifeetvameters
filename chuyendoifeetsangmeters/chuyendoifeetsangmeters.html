@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function feet(meters) {
+        let meters1=parseInt(meters);
+        let feet=meters1*3.279;
+        return feet;
+    }
+    function meters(feet) {
+        let feet1=parseInt(feet);
+        let meters=feet*0.305;
+        return meters;
+    }
+    let a=prompt("Nhap vao meters :");
+    let feett=feet(a);
+    document.write("Ket qua chuyen doi tu meters sang feet :"+feett+"</br>");
+    let b=prompt("Nhap vao gia tri feet:");
+    let meterss=meters(b);
+    document.write("ket qua chuyendoi tu feet sang meters :"+meterss);
+</script>
+</body>
+</html>
